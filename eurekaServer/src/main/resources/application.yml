@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: "eurekaServer"
+  output:
+    ansi:
+      enabled: always
+
+eureka:
+  client:
+    register-with-eureka: false # não registrar nele mesmo
+    fetch-registry: false # não buscar outros servidores
+    healthcheck:
+      enabled: true
+#  instance:
+#    statusPageUrlPath: ${server.servletPath}/info
+#    healthCheckUrlPath: ${server.servletPath}/health
